@@ -1,5 +1,5 @@
 .navbar-inner {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .navbar a {
@@ -32,6 +32,9 @@
 }
 
 .project-section {
+  position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
   background-color: antiquewhite;
 }
 .image {
@@ -48,6 +51,11 @@
     left: 5%;
     right: 5%;
     width: 90%;
+  }
+
+  .project-section {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -135,31 +143,34 @@ figure img {
   -webkit-transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
   transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
 }
-.news-Slide-up:hover .overlay {
-  background: rgb(64, 10, 111);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(64, 10, 111, 1) 0%,
-    rgba(89, 59, 116, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(64, 10, 111, 1) 0%,
-    rgba(89, 59, 116, 0) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(64, 10, 111, 1) 0%,
-    rgba(89, 59, 116, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#400a6f",endColorstr="#593b74",GradientType=1);
-}
 
-.news-Slide-up:hover .newsCaption {
-  -webkit-transform: translateY(0px);
-  transform: translateY(0px);
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
+@media only screen and (min-width: 700px) {
+  .news-Slide-up:hover .overlay {
+    background: rgb(64, 10, 111);
+    background: -moz-linear-gradient(
+      0deg,
+      rgba(64, 10, 111, 1) 0%,
+      rgba(89, 59, 116, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(64, 10, 111, 1) 0%,
+      rgba(89, 59, 116, 0) 100%
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(64, 10, 111, 1) 0%,
+      rgba(89, 59, 116, 0) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#400a6f",endColorstr="#593b74",GradientType=1);
+  }
+
+  .news-Slide-up:hover .newsCaption {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+  }
 }
